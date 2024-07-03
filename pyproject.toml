@@ -15,6 +15,7 @@ say_hello = "cli.commands:say_hello"
 [tool.poetry.dependencies]
 python = "^3.10"
 click = "^8.1.7"
+django = "^5.0.6"
 
 
 [build-system]
