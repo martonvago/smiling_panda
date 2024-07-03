@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Smiling Panda</title>
+    <!-- Headers required for a page is injected by using a block called 'headers' -->
+    {% block headers %}
+    {% endblock headers %}
+  </head>
+  <body>
+    <header><strong>Find your bamboo</strong></header>
+    <main>
+      {% block content %}{% endblock content %}
+    </main>
+  </body>
+</html>

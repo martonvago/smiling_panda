@@ -1,0 +1,9 @@
+{% extends "web/includes/base.html" %}
+{% block content %}
+  <p>Showing only bamboo species satisfying a sophisticated taste level of at least {{ min_stars }} Michelin stars:</p>
+  <ul>
+    {% for bamboo in bamboos %}
+      <li>{{ bamboo.species }}: {{ bamboo.michelin_stars }}</li>
+    {% endfor %}
+  </ul>
+{% endblock content %}
