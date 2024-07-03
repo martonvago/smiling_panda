@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "smiling_panda"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [
+    { include = "cli" }
+]
+
+[tool.poetry.scripts]
+say_hello = "cli.commands:say_hello"
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
