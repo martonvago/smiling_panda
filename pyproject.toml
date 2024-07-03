@@ -10,6 +10,7 @@ packages = [
 
 [tool.poetry.scripts]
 say_hello = "cli.commands:say_hello"
+bamboo = "cli.commands:bamboo"
 
 
 [tool.poetry.dependencies]
